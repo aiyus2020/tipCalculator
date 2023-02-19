@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="tip.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h3 style="text-align: center; font-weight: bold;">Tip Calculator</h3>
+            <p style="border-bottom: 2px solid rgba(128, 128, 128, 0.5);"></p>
+            <br>
+            <label for="amount">Bill Amount</label>
+            <br>
+            <button><i data-title="Naira" class="fa-solid fa-naira-sign"></i></button><input id="Amount" type="number">
+            <br>
+            <br>
+            <label for="Guest"> Number of Guest</label>
+            <br>
+            <button><i data-title="woman" class="fa-solid fa-person-dress"></i></button><input id="Guest" type="number">
+            <br>
+            <br>
+            <label for="quality">Service Quality</label>
+            <br>
+            <select name="quality" id="quality">
+                <option disabled selected value="0">select...</option>
+                <option value="0.3">30% - man wen sabi!</option>
+                <option value="0.2">20% - you try!</option>
+                <option value="0.15">15% - continue!</option>
+                <option value="0.10">10% - you nor try!</option>
+                <option value="0.05">5% - comot for road!</option>
+            </select>
+            <div style="text-align: center;">
+                <p style="border-top: 2px solid rgba(128, 128, 128, 0.5);"></p>
+                <button style="border-radius: 5px; width: fit-content;" onclick="calculate()">Calculate</button>
+            </div>
+
+        </div>
+        <div id="tipAmount"></div>
+    </div>
+
+
+    <script src="tip.js"></script>
+</body>
+
+</html>
